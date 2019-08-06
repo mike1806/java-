@@ -9,35 +9,34 @@ public class SumApp{
 
 	public static void main(String args[]){
 
-	//declaring variables
+		//declaring variables
 
-	int num;
-	int sum;
+		int num;
+		int sum;
 
-	Sum mySumApp;
+		Sum mySumApp;
 
-	//declaring objects
+		//declaring objects
 
-	num=0;
-	sum=0;
+		num=0;
+		sum=0;
 
-	//create objects
+		//create objects
 
-	mySumApp=new Sum();
+		mySumApp=new Sum();
 
-	//inputs
+		//inputs
 
-	num=Integer.parseInt(JOptionPane.showInputDialog("Enter number "));
-	mySumApp.setNum(num);
+		num=Integer.parseInt(JOptionPane.showInputDialog("Enter number "));
 
-	//process
+		//process
 
-	mySumApp.compute();
+		mySumApp.compute();
 
-	//outputs
+		//outputs
 
-	sum=mySumApp.getSum();
-	JOptionPane.showMessageDialog(null,"Sum is "+sum);
+		sum=mySumApp.getSum();
+		JOptionPane.showMessageDialog(null, "Sum is "+sum);
 	}
 
 }
